@@ -1,5 +1,5 @@
 .ls{
-    background: #0f0f10;
+    background: #111B21;
     color: white;
     height: 100%;
 }
@@ -123,4 +123,18 @@
 
 .menu:hover .sub-menu{
     display: block;
+}
+
+.friends.border img{
+    border: 3px solid #07fff3;
+}
+
+.friends.border div span{
+    color: #07fff3;
+}
+
+@media (max-width:900px){
+    .ls{
+        width: 100%;
+    }
 }

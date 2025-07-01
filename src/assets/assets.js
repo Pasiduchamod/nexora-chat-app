@@ -1,6 +1,7 @@
 import avatar_icon from './avatar_icon.png'
 import gallery_icon from './gallery_icon.png'
 import help_icon from './help_icon.png'
+import loading from './loading.png'
 import logo_icon from './logo_icon.png'
 import logo_big from './logo_big.png'
 import logo from './logo.png'
@@ -21,6 +22,7 @@ const assets = {
     avatar_icon,
     gallery_icon,
     help_icon,
+    loading,
     logo_big,
     logo_icon,
     logo,

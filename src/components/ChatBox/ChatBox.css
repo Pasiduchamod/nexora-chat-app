@@ -1,7 +1,9 @@
 .chat-box{
     height: 100vh;
     position: relative;
-    background-color: #f1f5ff;
+    background-color: #1E2C33;
+    border-left: solid rgb(109, 109, 109) 1px;
+    border-right: solid rgb(109, 109, 109) 1px;
 }
 
 .chat-user{
@@ -10,10 +12,12 @@
     align-items: center;
     gap: 10px;
     border-bottom: 1px solid #c6c6c6;
+    background: #111B21;
 }
 
 .chat-user img{
     width: 25px;
+    height: 25px;
     border-radius: 50%;
 }
 
@@ -26,7 +30,7 @@
     flex: 1;
     font-weight: 500;
     font-size: 20px;
-    color: #393939;
+    color: white;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -37,11 +41,13 @@
     align-items: center;
     gap: 12px;
     padding: 12px 15px;
-    background: white;
+    background: #2A3942;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+    margin: 10px;
+    border-radius: 30px;
 }
 
 .chat-input img{
@@ -61,6 +67,8 @@
     flex: 1;
     border: none;
     outline: none;
+    background: #2A3942;
+    color: white;
 }
 
 .chat-msg {
@@ -94,7 +102,6 @@
 
 .msg{
     color: white;
-    background-color: #077EFF;
     padding: 8px;
     max-width: 200px;
     font-size: 11px;
@@ -105,15 +112,61 @@
 
 .r-msg .msg{
     border-radius: 8px 8px 8px 0px;
+    background-color: #374b56;
+}
+
+.s-msg .msg{
+    border-radius: 8px 8px 0px 8px;
+    background-color: #005C4B;
 }
 
 .s-msg div,.r-msg div{
     text-align: center;
     font-size: 9px;
+    color: white;
 }
 
 .msg-img{
     max-width: 230px;
     margin-bottom: 30px;
     border-radius: 10px;
+}
+
+.chat-welcome{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #adadad;
+    background: #1E2C33;
+}
+
+.chat-welcome img{
+    width: 200px;
+}
+
+.chat-welcome p{
+    font-size: 20px;
+    font-weight: 5000;
+    color: #cfcfcf;
+}
+
+.chat-user .arrow{
+    display: none;
+}
+
+@media (max-width:900px){
+    .chat-box{
+        width: 100%;
+        justify-content: center;
+    }
+    .chat-user .arrow{
+        display: block;
+        height: 35px;
+    }
+    .chat-user .help{
+        display: none;
+    }
 }
