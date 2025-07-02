@@ -8,6 +8,10 @@
     padding: 2px;
 }
 
+.ls-top h2{
+    margin: 12px;
+}
+
 .ls-nav{
     display: flex;
     justify-content: space-between;

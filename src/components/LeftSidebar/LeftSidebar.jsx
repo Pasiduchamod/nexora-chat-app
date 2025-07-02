@@ -162,6 +162,7 @@ const LeftSidebar = () => {
             </div>
           </div>
         </div>
+        <h2>Chats</h2>
         <div className="ls-search">
           <img src={assets.search_icon} alt="" />
           <input
