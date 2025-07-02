@@ -158,15 +158,30 @@
 }
 
 @media (max-width:900px){
-    .chat-box{
-        width: 100%;
-        justify-content: center;
-    }
-    .chat-user .arrow{
-        display: block;
-        height: 35px;
-    }
+    .chat-box {
+    width: 100%;
+    justify-content: center;
+    height: 100dvh; /* Use dynamic viewport height to adapt with mobile tab bar */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+    .chat-user .arrow {
+    display: block;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
     .chat-user .help{
         display: none;
     }
+    .chat-welcome{
+    display: none;
+}
 }

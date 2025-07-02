@@ -23,7 +23,7 @@ const AppContextProvider = (props) => {
     if (logoutTimer.current) clearTimeout(logoutTimer.current);
     logoutTimer.current = setTimeout(() => {
       logout();
-      navigate("/login");
+      navigate("/");
       toast.info("Logged out due to inactivity.");
     }, 60000); // 60s
   };
